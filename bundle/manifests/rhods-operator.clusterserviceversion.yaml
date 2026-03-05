@@ -90,8 +90,8 @@ metadata:
     capabilities: Full Lifecycle
     categories: AI/Machine Learning, Big Data
     certified: "False"
-    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:3bb55e40ea0c8793b51282be709a4af29b45d2a77afab60837385ca26bc58605"
-    createdAt: "2026-03-05T19:52:58Z"
+    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:b60846c3759acb45f145e405414f00c596cc446005be4ab73bebb63fc399469c"
+    createdAt: "2026-03-05T20:16:23Z"
     description: Operator for deployment and management of Red Hat OpenShift AI
     features.operators.openshift.io/cnf: "false"
     features.operators.openshift.io/cni: "false"
@@ -209,6 +209,12 @@ spec:
       displayName: Auth
       kind: Auth
       name: auths.services.platform.opendatahub.io
+      version: v1alpha1
+    - kind: AzureKubernetesEngine
+      name: azurekubernetesengines.infrastructure.opendatahub.io
+      version: v1alpha1
+    - kind: CoreWeaveKubernetesEngine
+      name: coreweavekubernetesengines.infrastructure.opendatahub.io
       version: v1alpha1
     - description: Dashboard is the Schema for the dashboards API
       displayName: Dashboard
@@ -985,6 +991,8 @@ spec:
         - apiGroups:
           - infrastructure.opendatahub.io
           resources:
+          - azurekubernetesengines
+          - coreweavekubernetesengines
           - hardwareprofiles
           verbs:
           - create
@@ -997,12 +1005,16 @@ spec:
         - apiGroups:
           - infrastructure.opendatahub.io
           resources:
+          - azurekubernetesengines/finalizers
+          - coreweavekubernetesengines/finalizers
           - hardwareprofiles/finalizers
           verbs:
           - update
         - apiGroups:
           - infrastructure.opendatahub.io
           resources:
+          - azurekubernetesengines/status
+          - coreweavekubernetesengines/status
           - hardwareprofiles/status
           verbs:
           - get
@@ -1341,6 +1353,18 @@ spec:
         - apiGroups:
           - operator.openshift.io
           resources:
+          - certmanagers
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - operator.openshift.io
+          resources:
           - consoles
           - ingresscontrollers
           verbs:
@@ -1466,11 +1490,113 @@ spec:
           - rbac.authorization.k8s.io
           resources:
           - clusterrolebindings
-          - clusterroles
           - rolebindings
+          verbs:
+          - '*'
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resources:
+          - clusterroles
+          verbs:
+          - '*'
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resourceNames:
+          - cert-manager-operator-controller-manager-clusterrole
+          - cert-manager-operator-metrics-reader
+          resources:
+          - clusterroles
+          verbs:
+          - bind
+          - delete
+          - escalate
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resourceNames:
+          - metrics-reader
+          - servicemesh-operator3-clusterrole
+          resources:
+          - clusterroles
+          verbs:
+          - bind
+          - delete
+          - escalate
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resourceNames:
+          - openshift-lws-operator-clusterrole
+          resources:
+          - clusterroles
+          verbs:
+          - bind
+          - delete
+          - escalate
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resources:
           - roles
           verbs:
           - '*'
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resourceNames:
+          - cert-manager-operator-controller-manager-role
+          resources:
+          - roles
+          verbs:
+          - bind
+          - delete
+          - escalate
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resourceNames:
+          - openshift-lws-operator-role
+          resources:
+          - roles
+          verbs:
+          - bind
+          - delete
+          - escalate
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resourceNames:
+          - servicemesh-operator3-role
+          resources:
+          - roles
+          verbs:
+          - bind
+          - delete
+          - escalate
+          - get
+          - list
+          - patch
+          - update
+          - watch
         - apiGroups:
           - route.openshift.io
           resources:
@@ -1498,6 +1624,18 @@ spec:
           - create
           - patch
           - update
+        - apiGroups:
+          - sail-operator.io
+          resources:
+          - istios
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
         - apiGroups:
           - security.openshift.io
           resources:
@@ -1747,7 +1885,7 @@ spec:
                 - name: RELATED_IMAGE_ODH_KF_NOTEBOOK_CONTROLLER_IMAGE
                   value: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:0942f8484b700d995571cf58d3332d602f1bdfeeb5c10abfc3e3ecb7283ea1a2"
                 - name: RELATED_IMAGE_ODH_DASHBOARD_IMAGE
-                  value: "quay.io/opendatahub/odh-dashboard@sha256:3f7de3b8bbad70a93de1f13accbad7d480810770a72f9b7c80bcac60e51153c0"
+                  value: "quay.io/opendatahub/odh-dashboard@sha256:dc28c239252c163e3083d8d91f2b8ecbb9b2f974f49860700575b8814a347418"
                 - name: RELATED_IMAGE_ODH_NOTEBOOK_CONTROLLER_IMAGE
                   value: "quay.io/opendatahub/odh-notebook-controller@sha256:cfa27aab48d309a6d514e88d80552f88a3e09c311332b577e2e37443d3bff382"
                 - name: RELATED_IMAGE_ODH_DATA_SCIENCE_PIPELINES_OPERATOR_CONTROLLER_IMAGE
@@ -1893,7 +2031,7 @@ spec:
                 - name: RELATED_IMAGE_ODH_TRAINING_CUDA128_TORCH29_PY312_IMAGE
                   value: "quay.io/opendatahub/odh-training-cuda128-torch29-py312@sha256:ae81f18a4d0b4dd82575eb51e2d95f6bac16a44e9ba0d36f55614427a563d0b5"
                 - name: RELATED_IMAGE_ODH_MOD_ARCH_MAAS_IMAGE
-                  value: "quay.io/opendatahub/mod-arch-maas@sha256:f8d462b921971773fed45985c17b73c8fd4c70c35d88895a758774d1e75a2d86"
+                  value: "quay.io/opendatahub/mod-arch-maas@sha256:05645411f34e51a56b152cc6b8a3b5fc539144e47f7998c122ef4bc40bba3c0b"
                 - name: RELATED_IMAGE_SPARK_OPERATOR_IMAGE
                   value: "quay.io/opendatahub/spark-operator@sha256:8515275d9b1058d347688a047ea0f64a8ea40d885c45dc1dedaac749cbec594d"
                 - name: RELATED_IMAGE_ODH_MAAS-API_IMAGE
@@ -1924,7 +2062,7 @@ spec:
                   value: registry.redhat.io/rhaiis/vllm-spyre-rhel9@sha256:4a035bb354c4a0e4040c277b2f1a1ffdc7e61f6f505c5fa5d032d22f50c4fa29
                 - name: RELATED_IMAGE_RHAIIS_VLLM_S390X_SPYRE_IMAGE
                   value: registry.redhat.io/rhaiis/vllm-spyre-rhel9@sha256:4a035bb354c4a0e4040c277b2f1a1ffdc7e61f6f505c5fa5d032d22f50c4fa29
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:3bb55e40ea0c8793b51282be709a4af29b45d2a77afab60837385ca26bc58605"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:b60846c3759acb45f145e405414f00c596cc446005be4ab73bebb63fc399469c"
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
@@ -2409,12 +2547,12 @@ spec:
     type: ValidatingAdmissionWebhook
     webhookPath: /validate-kueue
   relatedImages:
-  - name: opendatahub-operator-3bb55e40ea0c8793b51282be709a4af29b45d2a77afab60837385ca26bc58605-annotation
-    image: "quay.io/opendatahub/opendatahub-operator@sha256:3bb55e40ea0c8793b51282be709a4af29b45d2a77afab60837385ca26bc58605"
+  - name: opendatahub-operator-b60846c3759acb45f145e405414f00c596cc446005be4ab73bebb63fc399469c-annotation
+    image: "quay.io/opendatahub/opendatahub-operator@sha256:b60846c3759acb45f145e405414f00c596cc446005be4ab73bebb63fc399469c"
   - name: odh_kf_notebook_controller_image
     image: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:0942f8484b700d995571cf58d3332d602f1bdfeeb5c10abfc3e3ecb7283ea1a2"
   - name: odh_dashboard_image
-    image: "quay.io/opendatahub/odh-dashboard@sha256:3f7de3b8bbad70a93de1f13accbad7d480810770a72f9b7c80bcac60e51153c0"
+    image: "quay.io/opendatahub/odh-dashboard@sha256:dc28c239252c163e3083d8d91f2b8ecbb9b2f974f49860700575b8814a347418"
   - name: odh_notebook_controller_image
     image: "quay.io/opendatahub/odh-notebook-controller@sha256:cfa27aab48d309a6d514e88d80552f88a3e09c311332b577e2e37443d3bff382"
   - name: odh_data_science_pipelines_operator_controller_image
@@ -2560,7 +2698,7 @@ spec:
   - name: odh_training_cuda128_torch29_py312_image
     image: "quay.io/opendatahub/odh-training-cuda128-torch29-py312@sha256:ae81f18a4d0b4dd82575eb51e2d95f6bac16a44e9ba0d36f55614427a563d0b5"
   - name: odh_mod_arch_maas_image
-    image: "quay.io/opendatahub/mod-arch-maas@sha256:f8d462b921971773fed45985c17b73c8fd4c70c35d88895a758774d1e75a2d86"
+    image: "quay.io/opendatahub/mod-arch-maas@sha256:05645411f34e51a56b152cc6b8a3b5fc539144e47f7998c122ef4bc40bba3c0b"
   - name: spark_operator_image
     image: "quay.io/opendatahub/spark-operator@sha256:8515275d9b1058d347688a047ea0f64a8ea40d885c45dc1dedaac749cbec594d"
   - name: odh_maas-api_image
