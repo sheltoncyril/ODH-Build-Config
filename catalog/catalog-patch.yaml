@@ -9,5 +9,5 @@ patch:
       entries:
         - name: rhods-operator.3.4.0-ea.2
   olm.bundle:
-    - quay.io/opendatahub/opendatahub-operator-bundle@sha256:5385de935ccf8422ae297cb4d8ae7ee64138deee13383d3e8e2d6aeec8010ee9
+    - quay.io/opendatahub/opendatahub-operator-bundle@sha256:e8c9c9a8116d4ae8934c0b3b47afcc1e161e9f88a450d77440b68470c03274c3
 # edit this comment to simulate a bundle update.
