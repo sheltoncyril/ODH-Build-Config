@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:886dfa4c500bf5d67c07257fa2106d1a598ed3fbb45cd8688d5352ff6eb8399b
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:99cd6c5e16a8d045b6cee132225ac2ebdf12307742650b865e0cbdb662a65fe6
 name: rhods-operator.3.4.0-ea.2
 package: rhods-operator
 properties:
@@ -261,8 +261,8 @@ properties:
       capabilities: Full Lifecycle
       categories: AI/Machine Learning, Big Data
       certified: "False"
-      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:60b749d2592f2f79047e4bc8cba61fb063109245a54f9c582bd17ec93863204c
-      createdAt: "2026-03-06T15:40:10Z"
+      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:ed1b95ec6f185c41bf3efb780ab3a097f3cab18f3841de89243e629515ece533
+      createdAt: "2026-03-06T15:48:34Z"
       description: Operator for deployment and management of Red Hat OpenShift AI
       feast-cronjob-image: registry.redhat.io/openshift4/ose-cli@sha256:bc35a9fc663baf0d6493cc57e89e77a240a36c43cf38fb78d8e61d3b87cf5cc5
       features.operators.openshift.io/cnf: "false"
@@ -642,7 +642,7 @@ relatedImages:
   name: odh_mlmd_grpc_server_image
 - image: quay.io/opendatahub/mlserver@sha256:49007d0fb40663a2f8afc3ddb1a30d6d5fefe609493b09afd61064ff2f169fa2
   name: odh_mlserver_image
-- image: quay.io/opendatahub/mod-arch-maas@sha256:fe38e075c9c44532a43d7cd1bafa0c074889ec33c10708a4d6dccfda9dccc1fe
+- image: quay.io/opendatahub/mod-arch-maas@sha256:24f6e377b62248ab5977bed12727d4d20f98d48a9ef714139cf119c43f44d162
   name: odh_mod_arch_maas_image
 - image: quay.io/opendatahub/model-registry-job-async-upload@sha256:3e6622dbc95b4d8ca349b4b34e506d0f6709702a5f4216c120c2b047a7328a99
   name: odh_model_registry_job_async_upload_image
@@ -660,7 +660,7 @@ relatedImages:
   name: odh_kube_auth_proxy_image
 - image: quay.io/opendatahub/odh-mod-arch-automl@sha256:a08164e9715667d562b533226d848ecf45da9a3e7937eac306b2de287b46149b
   name: odh_mod_arch_automl_image
-- image: quay.io/opendatahub/odh-mod-arch-autorag@sha256:166370eed951850d0b2f2c6e8576f0a8e624d8e102c2280d73cd6b8f8316b32c
+- image: quay.io/opendatahub/odh-mod-arch-autorag@sha256:f37df1b5be45ec6b8791a2587d509702e266dfb7bb76d7145d191d683856f60c
   name: odh_mod_arch_autorag_image
 - image: quay.io/opendatahub/odh-mod-arch-eval-hub@sha256:e8ee7e064ae84e002dfa35a28eadc1077274132d90f8f056e69d8db69ffaabbe
   name: odh_mod_arch_eval_hub_image
@@ -728,13 +728,13 @@ relatedImages:
   name: odh_workbench_jupyter_tensorflow_rocm_py312_image
 - image: quay.io/opendatahub/odh-workbench-jupyter-trustyai-cpu-py312-ubi9@sha256:a2bd92105bb964d80fcd661cfa33a72c1f2b35f6cb67c8384a542c6f0b71c8fc
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:886dfa4c500bf5d67c07257fa2106d1a598ed3fbb45cd8688d5352ff6eb8399b
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:99cd6c5e16a8d045b6cee132225ac2ebdf12307742650b865e0cbdb662a65fe6
   name: ""
-- image: quay.io/opendatahub/opendatahub-operator@sha256:60b749d2592f2f79047e4bc8cba61fb063109245a54f9c582bd17ec93863204c
-  name: opendatahub-operator-60b749d2592f2f79047e4bc8cba61fb063109245a54f9c582bd17ec93863204c-annotation
+- image: quay.io/opendatahub/opendatahub-operator@sha256:ed1b95ec6f185c41bf3efb780ab3a097f3cab18f3841de89243e629515ece533
+  name: opendatahub-operator-ed1b95ec6f185c41bf3efb780ab3a097f3cab18f3841de89243e629515ece533-annotation
 - image: quay.io/opendatahub/openvino_model_server@sha256:ff9915ec64cf5691c70bd281d09b3d60894f3dac9c72fb42ac74f2580a8fb5d7
   name: odh_openvino_model_server_image
-- image: quay.io/opendatahub/spark-operator@sha256:8515275d9b1058d347688a047ea0f64a8ea40d885c45dc1dedaac749cbec594d
+- image: quay.io/opendatahub/spark-operator@sha256:3d9616438463c11b6af8f96d418172f6f047191889972b48dc255ffea7a19c9d
   name: spark_operator_image
 - image: quay.io/opendatahub/ta-guardrails-orchestrator@sha256:757f3c3e05fe0c40bcfa8d29d0511ddcaff640a38c4ee507696cf126009381b6
   name: odh_fms_guardrails_orchestrator_image
