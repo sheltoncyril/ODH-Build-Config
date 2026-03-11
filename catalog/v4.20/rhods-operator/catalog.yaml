@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:6ef0bb2f389da88a872cf659363d5ed7cff66a8fa7917bea9e93d9278d45830f
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:e8c2c37e621a2ea7c4902d4e92a9370f52a7e5c3ea41c8c1c98fa2126976c90d
 name: rhods-operator.3.4.0-ea.2
 package: rhods-operator
 properties:
@@ -261,8 +261,8 @@ properties:
       capabilities: Full Lifecycle
       categories: AI/Machine Learning, Big Data
       certified: "False"
-      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:b1dd1ceaec04ebaa55442e0d7a9585445f9462a035cec895f5d9d21defc2e8e2
-      createdAt: "2026-03-11T13:06:51Z"
+      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:c4d769e6fa03efb3155a254d6219fd0b5181f6eb7f572d179fc8ddcd3d56e95f
+      createdAt: "2026-03-11T13:22:51Z"
       description: Operator for deployment and management of Red Hat OpenShift AI
       feast-cronjob-image: registry.redhat.io/openshift4/ose-cli@sha256:bc35a9fc663baf0d6493cc57e89e77a240a36c43cf38fb78d8e61d3b87cf5cc5
       features.operators.openshift.io/cnf: "false"
@@ -626,9 +626,9 @@ relatedImages:
   name: odh_trustyai_ragas_lls_provider_dsp_image
 - image: quay.io/opendatahub/llama-stack@sha256:28315bc513f5fe9389d3e800bbc352435939ab631ffb9cc3e512a09b4191b278
   name: odh_llama_stack_core_image
-- image: quay.io/opendatahub/llm-d-inference-scheduler@sha256:569580cc185e4789c841aadfe325e0b532e7363fe32f584ef358ea70dcf75cbb
+- image: quay.io/opendatahub/llm-d-inference-scheduler@sha256:dd804a2f534ccc55404356a5a6ec58736a993c3cd8099ef82aed54063e918b86
   name: odh_llm_d_inference_scheduler_image
-- image: quay.io/opendatahub/llm-d-routing-sidecar@sha256:108cdaf94018922645a4dfb1297f8474a2764219cee33d3ca38c4455fc47e61e
+- image: quay.io/opendatahub/llm-d-routing-sidecar@sha256:21b163d140b93b3f70f67cb161821e0c8c5ae26cef17ce763d2fbc64e7b02ae0
   name: odh_llm_d_routing_sidecar_image
 - image: quay.io/opendatahub/maas-api@sha256:3fd09272600e03ad6fdbaab9f203b28f7616c2710531fa6a7306bf51661716c4
   name: odh_maas_api_image
@@ -642,7 +642,7 @@ relatedImages:
   name: odh_mlmd_grpc_server_image
 - image: quay.io/opendatahub/mlserver@sha256:49007d0fb40663a2f8afc3ddb1a30d6d5fefe609493b09afd61064ff2f169fa2
   name: odh_mlserver_image
-- image: quay.io/opendatahub/mod-arch-maas@sha256:14e63084a9338eea620d39f3bb0c25b068f5f5d3e9f37c41120efc8572031bd5
+- image: quay.io/opendatahub/mod-arch-maas@sha256:440e24b8f44d4bff4a034431f749a0b9843020145984d3871256687ff3ec885f
   name: odh_mod_arch_maas_image
 - image: quay.io/opendatahub/model-registry-job-async-upload@sha256:1931fb4f5d6666dac356ef89fc097292dae913af3e4a3e57a3aa7ce8251ece87
   name: odh_model_registry_job_async_upload_image
@@ -734,10 +734,10 @@ relatedImages:
   name: odh_workbench_jupyter_tensorflow_rocm_py312_image
 - image: quay.io/opendatahub/odh-workbench-jupyter-trustyai-cpu-py312-ubi9@sha256:a2bd92105bb964d80fcd661cfa33a72c1f2b35f6cb67c8384a542c6f0b71c8fc
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:6ef0bb2f389da88a872cf659363d5ed7cff66a8fa7917bea9e93d9278d45830f
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:e8c2c37e621a2ea7c4902d4e92a9370f52a7e5c3ea41c8c1c98fa2126976c90d
   name: ""
-- image: quay.io/opendatahub/opendatahub-operator@sha256:b1dd1ceaec04ebaa55442e0d7a9585445f9462a035cec895f5d9d21defc2e8e2
-  name: opendatahub-operator-b1dd1ceaec04ebaa55442e0d7a9585445f9462a035cec895f5d9d21defc2e8e2-annotation
+- image: quay.io/opendatahub/opendatahub-operator@sha256:c4d769e6fa03efb3155a254d6219fd0b5181f6eb7f572d179fc8ddcd3d56e95f
+  name: opendatahub-operator-c4d769e6fa03efb3155a254d6219fd0b5181f6eb7f572d179fc8ddcd3d56e95f-annotation
 - image: quay.io/opendatahub/openvino_model_server@sha256:ff9915ec64cf5691c70bd281d09b3d60894f3dac9c72fb42ac74f2580a8fb5d7
   name: odh_openvino_model_server_image
 - image: quay.io/opendatahub/spark-operator@sha256:6566569abd70bd9a8c8960765fa0d974912ddc4599d627b2c8596cf3f8f70e5d
