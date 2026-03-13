@@ -68,6 +68,7 @@ config:
         opendatahub/odh-kube-auth-proxy-rhel9: opendatahub/odh-kube-auth-proxy-rhel9
         opendatahub/odh-model-performance-data-rhel9: opendatahub/odh-model-performance-data-rhel9
         opendatahub/odh-maas-api-rhel9: opendatahub/odh-maas-api-rhel9
+        opendatahub/odh-maas-controller-rhel9: opendatahub/odh-maas-controller-rhel9
         opendatahub/odh-trustyai-ragas-lls-provider-dsp-rhel9: opendatahub/odh-trustyai-ragas-lls-provider-dsp-rhel9
         opendatahub/odh-training-cuda121-torch24-py311-rhel9: opendatahub/odh-training-cuda121-torch24-py311-rhel9
         opendatahub/odh-training-cuda124-torch25-py311-rhel9: opendatahub/odh-training-cuda124-torch25-py311-rhel9
