@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:d5b06897d1b9fa794e49a095f3b39b7f28ef272f3513df06a7a60a26578e1e97
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:02fb1a41fabe0fa5200fad2739b4f303601b5515e107e30e1aef4b54beef1418
 name: rhods-operator.3.4.0
 package: rhods-operator
 properties:
@@ -264,8 +264,8 @@ properties:
       capabilities: Full Lifecycle
       categories: AI/Machine Learning, Big Data
       certified: "False"
-      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:64d62e83eaab8a42a4386ad037e9812544eb861244b2e8b0c78eeb1fd6a7358b
-      createdAt: "2026-03-19T21:52:20Z"
+      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:4930de49675ed29357b9824156d7d152252c2e0d4b166c1e84cf20907323ac6b
+      createdAt: "2026-03-19T22:01:35Z"
       description: Operator for deployment and management of Red Hat OpenShift AI
       feast-cronjob-image: registry.redhat.io/openshift4/ose-cli@sha256:bc35a9fc663baf0d6493cc57e89e77a240a36c43cf38fb78d8e61d3b87cf5cc5
       features.operators.openshift.io/cnf: "false"
@@ -737,10 +737,10 @@ relatedImages:
   name: odh_workbench_jupyter_tensorflow_rocm_py312_image
 - image: quay.io/opendatahub/odh-workbench-jupyter-trustyai-cpu-py312-ubi9@sha256:3cd23c9e2897fba076dc8fdc94364c98647c6f17980748a16c7d49e4584aa9f5
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:d5b06897d1b9fa794e49a095f3b39b7f28ef272f3513df06a7a60a26578e1e97
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:02fb1a41fabe0fa5200fad2739b4f303601b5515e107e30e1aef4b54beef1418
   name: ""
-- image: quay.io/opendatahub/opendatahub-operator@sha256:64d62e83eaab8a42a4386ad037e9812544eb861244b2e8b0c78eeb1fd6a7358b
-  name: opendatahub-operator-64d62e83eaab8a42a4386ad037e9812544eb861244b2e8b0c78eeb1fd6a7358b-annotation
+- image: quay.io/opendatahub/opendatahub-operator@sha256:4930de49675ed29357b9824156d7d152252c2e0d4b166c1e84cf20907323ac6b
+  name: opendatahub-operator-4930de49675ed29357b9824156d7d152252c2e0d4b166c1e84cf20907323ac6b-annotation
 - image: quay.io/opendatahub/openvino_model_server@sha256:ff9915ec64cf5691c70bd281d09b3d60894f3dac9c72fb42ac74f2580a8fb5d7
   name: odh_openvino_model_server_image
 - image: quay.io/opendatahub/spark-operator@sha256:d9c5f4aea4d05c03fbb9ae7caa37fd661f09d011264f122d112e60281ba130a8
