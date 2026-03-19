@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:7d5f4ec40428a3d6ca65560266646fd4c7cdcf9db9774991ff99276d1a5034f4
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:6b9ef4093cbf5b9209626480487ebb9589f5c8b4ee830ccf71fdfa824230c27c
 name: rhods-operator.3.4.0
 package: rhods-operator
 properties:
@@ -264,8 +264,8 @@ properties:
       capabilities: Full Lifecycle
       categories: AI/Machine Learning, Big Data
       certified: "False"
-      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:97d484ceb92e8610b80621b80887de0b576b73c708fe87a2ea86761c180f5418
-      createdAt: "2026-03-19T14:42:30Z"
+      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:c82c2b85845471842508be872c0df486ea4fc82a6f4ac4d6d3543e1e3fa14367
+      createdAt: "2026-03-19T14:45:37Z"
       description: Operator for deployment and management of Red Hat OpenShift AI
       feast-cronjob-image: registry.redhat.io/openshift4/ose-cli@sha256:bc35a9fc663baf0d6493cc57e89e77a240a36c43cf38fb78d8e61d3b87cf5cc5
       features.operators.openshift.io/cnf: "false"
@@ -645,7 +645,7 @@ relatedImages:
   name: odh_mlmd_grpc_server_image
 - image: quay.io/opendatahub/mlserver@sha256:49007d0fb40663a2f8afc3ddb1a30d6d5fefe609493b09afd61064ff2f169fa2
   name: odh_mlserver_image
-- image: quay.io/opendatahub/mod-arch-maas@sha256:c077220368ebc44df5014d82688988b40e98f632c37b120b35091f27ba02ec46
+- image: quay.io/opendatahub/mod-arch-maas@sha256:7cef6858d7f73cfe81cc7304e0499c49487f8841d1be28c5275c533bf1632fde
   name: odh_mod_arch_maas_image
 - image: quay.io/opendatahub/model-registry-job-async-upload@sha256:0e0528569d12399aeef379db7f9017cae526691f23f1eb4621548ba0a84d24ff
   name: odh_model_registry_job_async_upload_image
@@ -661,9 +661,9 @@ relatedImages:
   name: ose_kube_rbac_proxy_image
 - image: quay.io/opendatahub/odh-kube-auth-proxy@sha256:abea597e9f17f0bf07e52aa29b99dfc9819b4a4318e106709af44af89a1c8d06
   name: odh_kube_auth_proxy_image
-- image: quay.io/opendatahub/odh-mod-arch-automl@sha256:74a79861b0ac0ad8acecf4813db3587957668ad605a1d916b86e9217dca3becc
+- image: quay.io/opendatahub/odh-mod-arch-automl@sha256:a605f84adeda56b8e2d1c815eee3ff8ffaa36aa3926e86439c91068b753876cb
   name: odh_mod_arch_automl_image
-- image: quay.io/opendatahub/odh-mod-arch-autorag@sha256:e0eb3eaa21f5ced1ee8732abd0bad6d9697745ee3a216535a443cdd650f22d2f
+- image: quay.io/opendatahub/odh-mod-arch-autorag@sha256:6af95710cc1e32029f19076ac22ab8c3d6ffdae56e90d762d7e6870b5b736ae1
   name: odh_mod_arch_autorag_image
 - image: quay.io/opendatahub/odh-mod-arch-eval-hub@sha256:2719deacc19e3242baf42b85b87ecf1d21f3005b7bbcf8d4f6d7c7741f8e4c0e
   name: odh_mod_arch_eval_hub_image
@@ -737,10 +737,10 @@ relatedImages:
   name: odh_workbench_jupyter_tensorflow_rocm_py312_image
 - image: quay.io/opendatahub/odh-workbench-jupyter-trustyai-cpu-py312-ubi9@sha256:3cd23c9e2897fba076dc8fdc94364c98647c6f17980748a16c7d49e4584aa9f5
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:7d5f4ec40428a3d6ca65560266646fd4c7cdcf9db9774991ff99276d1a5034f4
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:6b9ef4093cbf5b9209626480487ebb9589f5c8b4ee830ccf71fdfa824230c27c
   name: ""
-- image: quay.io/opendatahub/opendatahub-operator@sha256:97d484ceb92e8610b80621b80887de0b576b73c708fe87a2ea86761c180f5418
-  name: opendatahub-operator-97d484ceb92e8610b80621b80887de0b576b73c708fe87a2ea86761c180f5418-annotation
+- image: quay.io/opendatahub/opendatahub-operator@sha256:c82c2b85845471842508be872c0df486ea4fc82a6f4ac4d6d3543e1e3fa14367
+  name: opendatahub-operator-c82c2b85845471842508be872c0df486ea4fc82a6f4ac4d6d3543e1e3fa14367-annotation
 - image: quay.io/opendatahub/openvino_model_server@sha256:ff9915ec64cf5691c70bd281d09b3d60894f3dac9c72fb42ac74f2580a8fb5d7
   name: odh_openvino_model_server_image
 - image: quay.io/opendatahub/spark-operator@sha256:d9c5f4aea4d05c03fbb9ae7caa37fd661f09d011264f122d112e60281ba130a8
