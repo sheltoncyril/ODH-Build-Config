@@ -286,6 +286,12 @@ patch:
     - name: RELATED_IMAGE_ODH_KSERVE_LLMISVC_CONTROLLER_IMAGE
       value: quay.io/opendatahub/odh-kserve-llmisvc-controller@sha256:425c0c4bc6880db0307f21f052389c5da7d17a5e099b17bea43d6fdf097c7fd2
       component: odh-kserve-llmisvc-controller
+    - name: RELATED_IMAGE_ODH_RHAII_CLUSTER_VALIDATOR_IMAGE
+      value: quay.io/opendatahub/odh-rhaii-cluster-validator@sha256:425c334468880db0307f21f052389c5da7d17a5e099b17bea43d6fdf097c7fd2
+      component: odh-rhaii-cluster-validator
+    - name: RELATED_IMAGE_ODH_RHAII_VALIDATOR_TOOLS_IMAGE
+      value: quay.io/opendatahub/odh-rhaii-validator-tools@sha256:425c334468835577307f21f052389c5da7d17a5e099b17bea43d6fdf097c7fd2
+      component: odh-rhaii-validator-tools
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
