@@ -294,6 +294,8 @@ patch:
       component: odh-rhaii-validator-tools
     - name: RELATED_IMAGE_ODH_LLM_D_BATCH_GATEWAY_APISERVER_IMAGE
       value: quay.io/opendatahub/odh-llm-d-batch-gateway-apiserver@sha256:08f1977adb809998d0923bc58c097616872849da0ac17d24cc566b584f7fa700
+    - name: RELATED_IMAGE_ODH_LLM_D_BATCH_GATEWAY_GC_IMAGE
+      value: quay.io/opendatahub/odh-llm-d-batch-gateway-gc@sha256:0f8d559a3c5507ee15d16c94b2eb3300352e755b7eb8a83665eb8fa26f38a708
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
