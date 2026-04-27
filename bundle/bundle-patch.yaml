@@ -313,6 +313,9 @@ patch:
     - name: RELATED_IMAGE_ODH_TRAINING_CUDA130_TORCH210_PY312_OPENMPI41_IMAGE
       value: quay.io/opendatahub/odh-training-cuda130-torch210-py312-openmpi41@sha256:086f35d0bfa5f0a33782a5f4f6863f121ceba4c8117a9752e9cd48f731757246
       component: odh-training-cuda130-torch210-py312-openmpi41
+    - name: RELATED_IMAGE_ODH_AI_GATEWAY_PAYLOAD_PROCESSING_E2E_IMAGE
+      value: quay.io/opendatahub/ai-gateway-payload-processing-e2e@sha256:acfc3182fe54c17448379bd1228083efc79cca0e86e5ba53c1660878c50609ff
+      component: odh-ai-gateway-payload-processing-e2e
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
