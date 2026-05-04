@@ -93,8 +93,8 @@ metadata:
     capabilities: Full Lifecycle
     categories: AI/Machine Learning, Big Data
     certified: "False"
-    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:8d72c5cb162b5e441587d8680f37dc0c182c581ef376496f123e0098a78eed6f"
-    createdAt: "2026-05-04T19:19:23Z"
+    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:ffd46f40d3f2aef9641c858017b64c95089fa388fe391efabb0c0a9bd1e9fa31"
+    createdAt: "2026-05-04T19:43:38Z"
     description: Operator for deployment and management of Red Hat OpenShift AI
     features.operators.openshift.io/cnf: "false"
     features.operators.openshift.io/cni: "false"
@@ -1883,7 +1883,7 @@ spec:
                 - name: RELATED_IMAGE_ODH_PIPELINE_RUNTIME_TENSORFLOW_CUDA_PY312_IMAGE
                   value: "quay.io/opendatahub/odh-pipeline-runtime-tensorflow-cuda-py312-ubi9@sha256:d5df52ae04806000080048c5c9c4f6a55e1afecd4d7f6be37d4af46063675234"
                 - name: RELATED_IMAGE_ODH_PIPELINE_RUNTIME_TENSORFLOW_ROCM_PY312_IMAGE
-                  value: "quay.io/opendatahub/odh-pipeline-runtime-tensorflow-rocm-py312-ubi9@sha256:fb6761637bbb08bcf92e59b7b642afa2f0575cfe373fadc8be3b35e3e1dfab58"
+                  value: "quay.io/opendatahub/odh-pipeline-runtime-tensorflow-rocm-py312-ubi9@sha256:461f83e61963f51464d9360270f66c0876246eb1ad2e96b09d7d7bee787db697"
                 - name: RELATED_IMAGE_ODH_WORKBENCH_CODESERVER_DATASCIENCE_CPU_PY312_IMAGE
                   value: "quay.io/opendatahub/odh-workbench-codeserver-datascience-cpu-py312-ubi9@sha256:c65bcf83cd5256dd37fee0119b552f37e09cda26b4c5de0140ee52b6a5be8897"
                 - name: RELATED_IMAGE_ODH_WORKBENCH_JUPYTER_DATASCIENCE_CPU_PY312_IMAGE
@@ -1917,7 +1917,7 @@ spec:
                 - name: RELATED_IMAGE_ODH_MODEL_METADATA_COLLECTION_IMAGE
                   value: "quay.io/opendatahub/odh-model-metadata-collection@sha256:2ffebbaad5fdc4c273d272053f4c338a28b205080772b1faef620b10ee36a266"
                 - name: RELATED_IMAGE_ODH_MOD_ARCH_GEN_AI_IMAGE
-                  value: "quay.io/opendatahub/odh-mod-arch-gen-ai@sha256:f2fbfbf1f2ce728d6bc80b4f75e61b6f05869c6c9ef4f67906c1d2780e6495ab"
+                  value: "quay.io/opendatahub/odh-mod-arch-gen-ai@sha256:291cb5832d834db9778ba785fdaf4729246e6a58701647cc30bcd281a4732319"
                 - name: RELATED_IMAGE_ODH_KUBE_AUTH_PROXY_IMAGE
                   value: "quay.io/opendatahub/odh-kube-auth-proxy@sha256:94308e5ecc4979a84a9bea9b7c2e2c5f601d9d4dd2a054cb64f66dcff3f117c6"
                 - name: RELATED_IMAGE_ODH_MAAS_API_IMAGE
@@ -2042,7 +2042,7 @@ spec:
                   value: registry.redhat.io/openshift4/ose-prom-label-proxy-rhel9@sha256:5522f37104f3fac57567fa2e9ec65601f60b8cea3603b12dcda26db8c481f404
                 - name: RELATED_IMAGE_ODH_PYTHON_312_IMAGE
                   value: registry.redhat.io/ubi9/python-312@sha256:0abad955c2c2e4575dc8987d76b8c49a7dd8e0679063e3118dab03c54528232f
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:8d72c5cb162b5e441587d8680f37dc0c182c581ef376496f123e0098a78eed6f"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:ffd46f40d3f2aef9641c858017b64c95089fa388fe391efabb0c0a9bd1e9fa31"
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
@@ -2091,7 +2091,7 @@ spec:
                 - -r
                 - /opt/manifests-template/.
                 - /opt/manifests/
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:8d72c5cb162b5e441587d8680f37dc0c182c581ef376496f123e0098a78eed6f"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:ffd46f40d3f2aef9641c858017b64c95089fa388fe391efabb0c0a9bd1e9fa31"
                 imagePullPolicy: Always
                 name: copy-manifests
                 resources:
@@ -2523,8 +2523,8 @@ spec:
     type: MutatingAdmissionWebhook
     webhookPath: /mutate-prometheus-monitors
   relatedImages:
-  - name: opendatahub-operator-8d72c5cb162b5e441587d8680f37dc0c182c581ef376496f123e0098a78eed6f-annotation
-    image: "quay.io/opendatahub/opendatahub-operator@sha256:8d72c5cb162b5e441587d8680f37dc0c182c581ef376496f123e0098a78eed6f"
+  - name: opendatahub-operator-ffd46f40d3f2aef9641c858017b64c95089fa388fe391efabb0c0a9bd1e9fa31-annotation
+    image: "quay.io/opendatahub/opendatahub-operator@sha256:ffd46f40d3f2aef9641c858017b64c95089fa388fe391efabb0c0a9bd1e9fa31"
   - name: odh_kf_notebook_controller_image
     image: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:3b57f17ce1363d995d175820946ea7ac8a22f61bfa9055bb374542e97d664a13"
   - name: odh_dashboard_image
@@ -2604,7 +2604,7 @@ spec:
   - name: odh_pipeline_runtime_tensorflow_cuda_py312_image
     image: "quay.io/opendatahub/odh-pipeline-runtime-tensorflow-cuda-py312-ubi9@sha256:d5df52ae04806000080048c5c9c4f6a55e1afecd4d7f6be37d4af46063675234"
   - name: odh_pipeline_runtime_tensorflow_rocm_py312_image
-    image: "quay.io/opendatahub/odh-pipeline-runtime-tensorflow-rocm-py312-ubi9@sha256:fb6761637bbb08bcf92e59b7b642afa2f0575cfe373fadc8be3b35e3e1dfab58"
+    image: "quay.io/opendatahub/odh-pipeline-runtime-tensorflow-rocm-py312-ubi9@sha256:461f83e61963f51464d9360270f66c0876246eb1ad2e96b09d7d7bee787db697"
   - name: odh_workbench_codeserver_datascience_cpu_py312_image
     image: "quay.io/opendatahub/odh-workbench-codeserver-datascience-cpu-py312-ubi9@sha256:c65bcf83cd5256dd37fee0119b552f37e09cda26b4c5de0140ee52b6a5be8897"
   - name: odh_workbench_jupyter_datascience_cpu_py312_image
@@ -2638,7 +2638,7 @@ spec:
   - name: odh_model_metadata_collection_image
     image: "quay.io/opendatahub/odh-model-metadata-collection@sha256:2ffebbaad5fdc4c273d272053f4c338a28b205080772b1faef620b10ee36a266"
   - name: odh_mod_arch_gen_ai_image
-    image: "quay.io/opendatahub/odh-mod-arch-gen-ai@sha256:f2fbfbf1f2ce728d6bc80b4f75e61b6f05869c6c9ef4f67906c1d2780e6495ab"
+    image: "quay.io/opendatahub/odh-mod-arch-gen-ai@sha256:291cb5832d834db9778ba785fdaf4729246e6a58701647cc30bcd281a4732319"
   - name: odh_kube_auth_proxy_image
     image: "quay.io/opendatahub/odh-kube-auth-proxy@sha256:94308e5ecc4979a84a9bea9b7c2e2c5f601d9d4dd2a054cb64f66dcff3f117c6"
   - name: odh_maas_api_image
