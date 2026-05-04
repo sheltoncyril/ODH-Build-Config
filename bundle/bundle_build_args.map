@@ -1,4 +1,4 @@
-OPENDATAHUB_OPERATOR_GIT_URL=https://github.com/AjayJagan/opendatahub-operator
+OPENDATAHUB_OPERATOR_GIT_URL=https://github.com/opendatahub-io/opendatahub-operator
 OPENDATAHUB_OPERATOR_GIT_COMMIT=90562b8b6bd314ed1e29195cdd9d129670380d24
-OPENDATAHUB_OPERATOR_IMAGE=quay.io/opendatahub/opendatahub-operator@sha256:694ada1ef886ddbf4fdbd570b5e7c7650c48b80416257af96d69981de8cb8483
-BUILD_METADATA_URL=https://github.com/opendatahub-io/odh-build-metadata/tree/main/components/odh-operator/694ada1ef886ddbf4fdbd570b5e7c7650c48b80416257af96d69981de8cb8483
+OPENDATAHUB_OPERATOR_IMAGE=quay.io/opendatahub/opendatahub-operator@sha256:b895e9df1e54631d2d0d9d9be2bfefb77245fb63c36bf8ad00384e9644022b78
+BUILD_METADATA_URL=https://github.com/opendatahub-io/odh-build-metadata/tree/main/components/odh-operator/b895e9df1e54631d2d0d9d9be2bfefb77245fb63c36bf8ad00384e9644022b78
