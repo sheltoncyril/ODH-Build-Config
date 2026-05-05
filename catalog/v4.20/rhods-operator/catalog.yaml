@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:4a80f7bec9e10141dceac9ec1b370235ef24f35e42efc8f1705522fe312dd4a4
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:54588ffee301c654167e2f0ec4dda95e57d0b40ee766f477456892e6c83af5ad
 name: rhods-operator.3.5.0-ea.1
 package: rhods-operator
 properties:
@@ -264,8 +264,8 @@ properties:
       capabilities: Full Lifecycle
       categories: AI/Machine Learning, Big Data
       certified: "False"
-      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:b076ab610a16e916adf6b8884259a6602f9757baab952ab6a16cd4558fcd9d03
-      createdAt: "2026-05-05T16:23:21Z"
+      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:8d98b8a27851a5800a7e906373b9240b7ec5bbd42d54cede83f0efacc06a78ad
+      createdAt: "2026-05-05T17:42:31Z"
       description: Operator for deployment and management of Red Hat OpenShift AI
       feast-cronjob-image: registry.redhat.io/openshift4/ose-cli@sha256:bc35a9fc663baf0d6493cc57e89e77a240a36c43cf38fb78d8e61d3b87cf5cc5
       features.operators.openshift.io/cnf: "false"
@@ -629,9 +629,9 @@ relatedImages:
   name: odh_llm_d_inference_scheduler_image
 - image: quay.io/opendatahub/llm-d-routing-sidecar@sha256:592014617aa530b49678469d2392255def32ff70370a003a457250de0865a22d
   name: odh_llm_d_routing_sidecar_image
-- image: quay.io/opendatahub/maas-api@sha256:a048b348a44b4d0e5c9790297ed3b25249fa0a1f8f582d759348e55e0642c535
+- image: quay.io/opendatahub/maas-api@sha256:704ef31aa4ced743b42afeb312c362dac27c92b6c467134035fbae6959c65694
   name: odh_maas_api_image
-- image: quay.io/opendatahub/maas-controller@sha256:e15d9cb108af6a5b5baa4f649050e149c03817611fba34a58637073dca9cced3
+- image: quay.io/opendatahub/maas-controller@sha256:68b1e12d3ab4024d06449581934c000f872702e359f75968c8245214112c04f6
   name: odh_maas_controller_image
 - image: quay.io/opendatahub/mlflow-operator@sha256:a769004db8f6bacc5741a7b7d9991509010c5096162739623bd8461c4d6d21b6
   name: odh_mlflow_operator_image
@@ -641,7 +641,7 @@ relatedImages:
   name: odh_mlmd_grpc_server_image
 - image: quay.io/opendatahub/mlserver@sha256:52b5deae02574f339298973148be8fedcc396ad132d2dee6629d5c195ffaf1d9
   name: odh_mlserver_image
-- image: quay.io/opendatahub/mod-arch-maas@sha256:20c7344ac06a3d62471f478666abf64a7ef0e469773852fed5b65ef901301c96
+- image: quay.io/opendatahub/mod-arch-maas@sha256:e55e5279d5f059467d6f7162801f5e19eecfe49fbd5974efad81c1e7c4c9dfa0
   name: odh_mod_arch_maas_image
 - image: quay.io/opendatahub/model-registry-job-async-upload@sha256:a48a44abc4f84ecc630dd5017d427fc7151fe22f81c306801975095693a72d94
   name: odh_model_registry_job_async_upload_image
@@ -657,7 +657,7 @@ relatedImages:
   name: odh_autorag_image
 - image: quay.io/opendatahub/odh-built-in-detector@sha256:8541cf4c8c2568c25810913e5c8613845dbd3473b3c253c1b117797575a5db81
   name: odh_built_in_detector_image
-- image: quay.io/opendatahub/odh-dashboard@sha256:bbf510be72da0648ba7d46a15d11cfd9a5e81b1919330fc0ff324f3f0ed0a75a
+- image: quay.io/opendatahub/odh-dashboard@sha256:c839cb16d891e09ecd849d069ff5d690852682197a6a9305564302c9f67dd947
   name: odh_dashboard_image
 - image: quay.io/opendatahub/odh-kserve-autogluon-server@sha256:4787922975f99877d1cc5cdd0c7fe129b3bbd5c5324ba956047c8b9d8f5a605d
   name: odh_kserve_autogluon_server_image
@@ -679,13 +679,13 @@ relatedImages:
   name: odh_llm_d_batch_gateway_gc_image
 - image: quay.io/opendatahub/odh-llm-d-batch-gateway-processor@sha256:e9e53e8612b57c3875383560124aaa067730b3058c440fab845e0414aebc2da6
   name: odh_llm_d_batch_gateway_processor_image
-- image: quay.io/opendatahub/odh-mod-arch-automl@sha256:0e4a85cc88a4ac820a7aa36900ddbd3c843e96b0293d9ce9060430d5bd85d32d
+- image: quay.io/opendatahub/odh-mod-arch-automl@sha256:bee22af1b1e0272006d64aca0ab93c0cd25cad88fb4decc2fee4d3e8fd9793dd
   name: odh_mod_arch_automl_image
-- image: quay.io/opendatahub/odh-mod-arch-autorag@sha256:798bdf629b90d73f4b851a023cb35657d0398e4db7b653f88f143bbe9455a163
+- image: quay.io/opendatahub/odh-mod-arch-autorag@sha256:f44cfe3d68735c0d638305a8c0a50d637d1a06f0b9f59bbe7d6694b5860766a5
   name: odh_mod_arch_autorag_image
 - image: quay.io/opendatahub/odh-mod-arch-eval-hub@sha256:04803465ef55d8d24a728e342ee33da16520f9ea5cd2e2e776a7605f20f1153f
   name: odh_mod_arch_eval_hub_image
-- image: quay.io/opendatahub/odh-mod-arch-gen-ai@sha256:219f486dbbc1e8b0786132ff4bbc084e792ee60874aba8c0ef2821917fa3b01b
+- image: quay.io/opendatahub/odh-mod-arch-gen-ai@sha256:9c870934427fbe1480740ef27725b449ed22581347f23851cc253c5aac831b54
   name: odh_mod_arch_gen_ai_image
 - image: quay.io/opendatahub/odh-mod-arch-mlflow@sha256:135ce02ef25f9da5c78fdbeff18bd0df40e21cbca734294b8e0d26d7dc8ed281
   name: odh_mod_arch_mlflow_image
@@ -765,10 +765,10 @@ relatedImages:
   name: odh_workbench_jupyter_tensorflow_rocm_py312_image
 - image: quay.io/opendatahub/odh-workbench-jupyter-trustyai-cpu-py312-ubi9@sha256:b0eb007a25478bea8fb52512cfdf713b201d8e108462302cefe34aa559dc6f48
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:4a80f7bec9e10141dceac9ec1b370235ef24f35e42efc8f1705522fe312dd4a4
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:54588ffee301c654167e2f0ec4dda95e57d0b40ee766f477456892e6c83af5ad
   name: ""
-- image: quay.io/opendatahub/opendatahub-operator@sha256:b076ab610a16e916adf6b8884259a6602f9757baab952ab6a16cd4558fcd9d03
-  name: opendatahub-operator-b076ab610a16e916adf6b8884259a6602f9757baab952ab6a16cd4558fcd9d03-annotation
+- image: quay.io/opendatahub/opendatahub-operator@sha256:8d98b8a27851a5800a7e906373b9240b7ec5bbd42d54cede83f0efacc06a78ad
+  name: opendatahub-operator-8d98b8a27851a5800a7e906373b9240b7ec5bbd42d54cede83f0efacc06a78ad-annotation
 - image: quay.io/opendatahub/spark-operator@sha256:4652fd39f9145fc26641f740f5f7b01210676fe74e371bd8dfad090e9716f575
   name: odh_spark_operator_image
 - image: quay.io/opendatahub/ta-guardrails-orchestrator@sha256:757f3c3e05fe0c40bcfa8d29d0511ddcaff640a38c4ee507696cf126009381b6
