@@ -1,5 +1,5 @@
 BUILD_METADATA_URL=https://github.com/opendatahub-io/odh-build-metadata/tree/main/components/odh-operator/9d09937ca7dfb3b3f7a6c8e3ed62239a739aca81686f73ad39fa7e34a99d5daf
-OPENDATAHUB_OPERATOR_BUNDLE_GIT_COMMIT=560970f916fc6df3b33f784252c991fad2863804
+OPENDATAHUB_OPERATOR_BUNDLE_GIT_COMMIT=29ad7b2a5ebfc811d6586592f4cac419421fe466
 OPENDATAHUB_OPERATOR_BUNDLE_GIT_URL=https://github.com/opendatahub-io/ODH-Build-Config
 OPENDATAHUB_OPERATOR_GIT_COMMIT=9990195a9228b5c64fba4e8aa27e7d3944bbb274
 OPENDATAHUB_OPERATOR_GIT_URL=https://github.com/opendatahub-io/opendatahub-operator

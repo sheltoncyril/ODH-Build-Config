@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:813c5fef100fd6d3f62e76a7f05fad89fc5ccae15df117f97a34d5704c4ac25f
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:4c250adf773ce04a9a3b551ba1c76764195db4d0ea37d09f548b5384024a3482
 name: rhods-operator.3.5.0-ea.1
 package: rhods-operator
 properties:
@@ -775,7 +775,7 @@ relatedImages:
   name: odh_workbench_jupyter_tensorflow_rocm_py312_image
 - image: quay.io/opendatahub/odh-workbench-jupyter-trustyai-cpu-py312-ubi9@sha256:b0eb007a25478bea8fb52512cfdf713b201d8e108462302cefe34aa559dc6f48
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:813c5fef100fd6d3f62e76a7f05fad89fc5ccae15df117f97a34d5704c4ac25f
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:4c250adf773ce04a9a3b551ba1c76764195db4d0ea37d09f548b5384024a3482
   name: ""
 - image: quay.io/opendatahub/opendatahub-operator@sha256:9d09937ca7dfb3b3f7a6c8e3ed62239a739aca81686f73ad39fa7e34a99d5daf
   name: opendatahub-operator-9d09937ca7dfb3b3f7a6c8e3ed62239a739aca81686f73ad39fa7e34a99d5daf-annotation
