@@ -64,9 +64,6 @@ patch:
     - name: RELATED_IMAGE_ODH_FEATURE_SERVER_IMAGE
       value: quay.io/opendatahub/feature-server@sha256:d9e648f21647bc1b27fa15f1d60e2fdca9a41bf49625c83bbd69ac31bdba0771
       component: odh-feature-server
-    - name: RELATED_IMAGE_ODH_LLAMA_STACK_K8S_OPERATOR_IMAGE
-      value: quay.io/opendatahub/llama-stack-k8s-operator@sha256:1adb3ef85a239cfe98aa00176ea93feb3789c3070f9843f1462734066d18bc37
-      component: odh-llama-stack-k8s-operator
     - name: RELATED_IMAGE_ODH_LLM_D_INFERENCE_SCHEDULER_IMAGE
       value: quay.io/opendatahub/llm-d-inference-scheduler@sha256:52db8e7022e866b42b806a75c61ed3faeff7ff1d094f6ce811c79887e6251457
       component: odh-llm-d-inference-scheduler
@@ -163,9 +160,6 @@ patch:
     - name: RELATED_IMAGE_ODH_MODEL_REGISTRY_JOB_ASYNC_UPLOAD_IMAGE
       value: quay.io/opendatahub/model-registry-job-async-upload@sha256:a2aee4fd7dc1bbe57f1b9c67642735cbeaa67c77088c497a5279c4a18d8735c1
       component: odh-model-registry-job-async-upload
-    - name: RELATED_IMAGE_ODH_LLAMA_STACK_CORE_IMAGE
-      value: quay.io/opendatahub/llama-stack@sha256:fe1f2a343ab7fd2134953bce4cd384563363b672e731d9cc7a9549ddf80691dd
-      component: odh-llama-stack-core
     - name: RELATED_IMAGE_ODH_WORKBENCH_JUPYTER_PYTORCH_LLMCOMPRESSOR_CUDA_PY312_IMAGE
       value: quay.io/opendatahub/odh-workbench-jupyter-pytorch-llmcompressor-cuda-py312-ubi9@sha256:8613c1bbd05e0f7c95110da9537bfe560407ea5bc0291dad090ec9604a05c599
       component: odh-workbench-jupyter-pytorch-llmcompressor-cuda-py312
