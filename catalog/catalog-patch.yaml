@@ -7,7 +7,7 @@ patch:
       package: rhods-operator
       schema: olm.channel
       entries:
-        - name: rhods-operator.3.5.0-ea.1
+        - name: rhods-operator.3.5.0-ea.2
   olm.bundle:
     - quay.io/opendatahub/opendatahub-operator-bundle@sha256:c478bc613c7a4dfab883eeb71e0f6b34dd3001f989162f5763ffab3425173a39
 # edit this comment to simulate a bundle update.
