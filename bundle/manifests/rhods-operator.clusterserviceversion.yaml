@@ -96,8 +96,8 @@ metadata:
     capabilities: Full Lifecycle
     categories: AI/Machine Learning, Big Data
     certified: "False"
-    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:b640a3dd00df85a532a824b6a47db2b38a367d7c3f04218f31c3e515ff3ebb23"
-    createdAt: "2026-05-25T19:38:39Z"
+    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:a7ad11229787baee7c65a90d81e32d139a19a9df41e68fa31ef3e464fe48bd4d"
+    createdAt: "2026-05-25T19:44:08Z"
     description: Operator for deployment and management of Red Hat OpenShift AI
     features.operators.openshift.io/cnf: "false"
     features.operators.openshift.io/cni: "false"
@@ -2004,7 +2004,7 @@ spec:
                 - name: RELATED_IMAGE_ODH_LLM_D_BATCH_GATEWAY_APISERVER_IMAGE
                   value: "quay.io/opendatahub/odh-llm-d-batch-gateway-apiserver@sha256:75ffb8ed7cab843b64c63a2e567f19f4b3b5d6a40fec77f17c9377e27076580b"
                 - name: RELATED_IMAGE_ODH_LLM_D_BATCH_GATEWAY_PROCESSOR_IMAGE
-                  value: "quay.io/opendatahub/odh-llm-d-batch-gateway-processor@sha256:b257cf7ec46f1da5f4eb65f7b7f32bc06ada83dab3cc3aa91339675cd2caa529"
+                  value: "quay.io/opendatahub/odh-llm-d-batch-gateway-processor@sha256:f7929519fd2e4d320a976d36ebc19ddc4b0366931284c3d04c3d71e9337ded6c"
                 - name: RELATED_IMAGE_ODH_LLM_D_BATCH_GATEWAY_GC_IMAGE
                   value: "quay.io/opendatahub/odh-llm-d-batch-gateway-gc@sha256:d2caf43868f5843d0c5af15b532bdc6d49794aaddb70a902c4b67b12d89c0b93"
                 - name: RELATED_IMAGE_ODH_KSERVE_LOCALMODELNODE_AGENT_IMAGE
@@ -2071,7 +2071,7 @@ spec:
                   value: registry.redhat.io/openshift4/ose-prom-label-proxy-rhel9@sha256:5522f37104f3fac57567fa2e9ec65601f60b8cea3603b12dcda26db8c481f404
                 - name: RELATED_IMAGE_ODH_PYTHON_312_IMAGE
                   value: registry.redhat.io/ubi9/python-312@sha256:0abad955c2c2e4575dc8987d76b8c49a7dd8e0679063e3118dab03c54528232f
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:b640a3dd00df85a532a824b6a47db2b38a367d7c3f04218f31c3e515ff3ebb23"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:a7ad11229787baee7c65a90d81e32d139a19a9df41e68fa31ef3e464fe48bd4d"
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
@@ -2120,7 +2120,7 @@ spec:
                 - -r
                 - /opt/manifests-template/.
                 - /opt/manifests/
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:b640a3dd00df85a532a824b6a47db2b38a367d7c3f04218f31c3e515ff3ebb23"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:a7ad11229787baee7c65a90d81e32d139a19a9df41e68fa31ef3e464fe48bd4d"
                 imagePullPolicy: Always
                 name: copy-manifests
                 resources:
@@ -2552,8 +2552,8 @@ spec:
     type: MutatingAdmissionWebhook
     webhookPath: /mutate-prometheus-monitors
   relatedImages:
-  - name: opendatahub-operator-b640a3dd00df85a532a824b6a47db2b38a367d7c3f04218f31c3e515ff3ebb23-annotation
-    image: "quay.io/opendatahub/opendatahub-operator@sha256:b640a3dd00df85a532a824b6a47db2b38a367d7c3f04218f31c3e515ff3ebb23"
+  - name: opendatahub-operator-a7ad11229787baee7c65a90d81e32d139a19a9df41e68fa31ef3e464fe48bd4d-annotation
+    image: "quay.io/opendatahub/opendatahub-operator@sha256:a7ad11229787baee7c65a90d81e32d139a19a9df41e68fa31ef3e464fe48bd4d"
   - name: odh_kf_notebook_controller_image
     image: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:3b57f17ce1363d995d175820946ea7ac8a22f61bfa9055bb374542e97d664a13"
   - name: odh_dashboard_image
@@ -2735,7 +2735,7 @@ spec:
   - name: odh_llm_d_batch_gateway_apiserver_image
     image: "quay.io/opendatahub/odh-llm-d-batch-gateway-apiserver@sha256:75ffb8ed7cab843b64c63a2e567f19f4b3b5d6a40fec77f17c9377e27076580b"
   - name: odh_llm_d_batch_gateway_processor_image
-    image: "quay.io/opendatahub/odh-llm-d-batch-gateway-processor@sha256:b257cf7ec46f1da5f4eb65f7b7f32bc06ada83dab3cc3aa91339675cd2caa529"
+    image: "quay.io/opendatahub/odh-llm-d-batch-gateway-processor@sha256:f7929519fd2e4d320a976d36ebc19ddc4b0366931284c3d04c3d71e9337ded6c"
   - name: odh_llm_d_batch_gateway_gc_image
     image: "quay.io/opendatahub/odh-llm-d-batch-gateway-gc@sha256:d2caf43868f5843d0c5af15b532bdc6d49794aaddb70a902c4b67b12d89c0b93"
   - name: odh_kserve_localmodelnode_agent_image
