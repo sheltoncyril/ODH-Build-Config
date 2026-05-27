@@ -67,6 +67,9 @@ patch:
     - name: RELATED_IMAGE_ODH_LLM_D_INFERENCE_SCHEDULER_IMAGE
       value: quay.io/opendatahub/llm-d-inference-scheduler@sha256:52db8e7022e866b42b806a75c61ed3faeff7ff1d094f6ce811c79887e6251457
       component: odh-llm-d-inference-scheduler
+    - name: RELATED_IMAGE_ODH_LLM_D_KV_CACHE_IMAGE
+      value: quay.io/opendatahub/llm-d-kv-cache@sha256:b72966d9dec1be5cc61d3d57bfb3bc740f56143e25ba3673ac962a4d997f3f9c
+      component: odh-llm-d-kv-cache
     - name: RELATED_IMAGE_ODH_LLM_D_ROUTING_SIDECAR_IMAGE
       value: quay.io/opendatahub/llm-d-routing-sidecar@sha256:bf7b1289302e99b42912723e3fd54b0bb73e53440fce95f4987225af8361eaed
       component: odh-llm-d-routing-sidecar
@@ -167,6 +170,9 @@ patch:
       value: quay.io/opendatahub/odh-pipeline-runtime-pytorch-llmcompressor-cuda-py312-ubi9@sha256:3d19956662f43effa91afb406c2aaed75a806caf5dec13afef16ed8032b9b326
       component: odh-pipeline-runtime-pytorch-llmcompressor-cuda-py312
     - name: RELATED_IMAGE_ODH_MODEL_METADATA_COLLECTION_IMAGE
+      value: quay.io/opendatahub/odh-model-metadata-collection@sha256:64b0bd3040fb7865779a21215a3831e1f75a96a132b31e0ed3a33d006eadccd0
+      component: odh-model-metadata-collection
+    - name: RELATED_IMAGE_ODH_MODEL_PERFORMANCE_DATA_IMAGE
       value: quay.io/opendatahub/odh-model-metadata-collection@sha256:64b0bd3040fb7865779a21215a3831e1f75a96a132b31e0ed3a33d006eadccd0
       component: odh-model-metadata-collection
     - name: RELATED_IMAGE_ODH_MOD_ARCH_GEN_AI_IMAGE
