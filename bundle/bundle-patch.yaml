@@ -340,6 +340,9 @@ patch:
     - name: RELATED_IMAGE_ODH_MOD_ARCH_AGENT_OPS_IMAGE
       value: quay.io/opendatahub/odh-mod-arch-agent-ops@sha256:7e509715a87b55312b62267b91988ec9dfbd6c7d437953a3e8a1655299c0dba9
       component: odh-mod-arch-agent-ops
+    - name: RELATED_IMAGE_ODH_BATCH_GATEWAY_OPERATOR_IMAGE
+      value: quay.io/opendatahub/odh-batch-gateway-operator@sha256:ce18f991fad472ffbec9e00c875bf978cced03acdd646c30086b3ba5f9bce560
+      component: odh-batch-gateway-operator
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
