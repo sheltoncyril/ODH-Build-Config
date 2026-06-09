@@ -349,6 +349,9 @@ patch:
     - name: RELATED_IMAGE_ODH_LLM_D_ROUTER_DISAGG_SIDECAR_IMAGE
       value: quay.io/opendatahub/odh-llm-d-router-disagg-sidecar@sha256:1c0b010e35ecd54dbe0ee4156e35a5c30f07308a357540539b59fbfbb7b76b3e
       component: odh-llm-d-router-disagg-sidecar
+    - name: RELATED_IMAGE_ODH_AUTHBRIDGE_PROXY_IMAGE
+      value: quay.io/opendatahub/odh-authbridge-proxy@sha256:6040f66ad2dd4590e9dc1c7c2fe4b3ab19c2f56b0567f98c8207be5ba27d889f
+      component: odh-authbridge-proxy
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
