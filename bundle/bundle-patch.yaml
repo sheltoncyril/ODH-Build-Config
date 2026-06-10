@@ -352,6 +352,9 @@ patch:
     - name: RELATED_IMAGE_ODH_AUTHBRIDGE_PROXY_IMAGE
       value: quay.io/opendatahub/odh-authbridge-proxy@sha256:6040f66ad2dd4590e9dc1c7c2fe4b3ab19c2f56b0567f98c8207be5ba27d889f
       component: odh-authbridge-proxy
+    - name: RELATED_IMAGE_ODH_WORKBENCHES_CONTROLLER_IMAGE
+      value: quay.io/opendatahub/odh-workbenches-controller@sha256:30d8e8e064bb6606b205891e428ebc4db1f6c0d7f3b25e831729a15f69c34964
+      component: odh-workbenches-controller
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
