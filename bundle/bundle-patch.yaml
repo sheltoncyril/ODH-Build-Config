@@ -351,3 +351,6 @@ patch:
   additional-fields:
     file: csv-patch.yaml
 # edit this comment to simulate bundle-patch update.
+relatedImages:
+  - name: RELATED_IMAGE_ODH_LATENCY_PREDICTOR_TRAINING_IMAGE
+    value: quay.io/opendatahub/odh-latency-predictor-training@sha256:2995eaefd22f834aaa4c46f96b8f9ed6f44f2fb1538ad2da8164e50a049bee01
