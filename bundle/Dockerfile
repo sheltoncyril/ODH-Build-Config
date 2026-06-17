@@ -4,6 +4,8 @@ ARG OPENDATAHUB_OPERATOR_GIT_URL=
 ARG OPENDATAHUB_OPERATOR_GIT_COMMIT=
 ARG OPENDATAHUB_OPERATOR_IMAGE=
 ARG BUILD_METADATA_URL=
+ARG ODH_LATENCY_PREDICTOR_TRAINING_GIT_URL=
+ARG ODH_LATENCY_PREDICTOR_TRAINING_GIT_COMMIT=
 ARG ODH_LATENCY_PREDICTOR_PREDICTION_GIT_URL=
 ARG ODH_LATENCY_PREDICTOR_PREDICTION_GIT_COMMIT=
 ARG ODH_LATENCY_PREDICTOR_TEST_GIT_URL=
@@ -25,6 +27,8 @@ LABEL operators.operatorframework.io.test.config.v1=tests/scorecard/
 LABEL \
       opendatahub-operator.git.url="${OPENDATAHUB_OPERATOR_GIT_URL}" \
       opendatahub-operator.git.commit="${OPENDATAHUB_OPERATOR_GIT_COMMIT}" \
+      odh-latency-predictor-training.git.url="${ODH_LATENCY_PREDICTOR_TRAINING_GIT_URL}" \
+      odh-latency-predictor-training.git.commit="${ODH_LATENCY_PREDICTOR_TRAINING_GIT_COMMIT}"
       odh-latency-predictor-prediction.git.url="${ODH_LATENCY_PREDICTOR_PREDICTION_GIT_URL}" \
       odh-latency-predictor-prediction.git.commit="${ODH_LATENCY_PREDICTOR_PREDICTION_GIT_COMMIT}"
       odh-latency-predictor-test.git.url="${ODH_LATENCY_PREDICTOR_TEST_GIT_URL}" \
