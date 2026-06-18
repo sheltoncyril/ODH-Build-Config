@@ -151,9 +151,9 @@ patch:
     - name: RELATED_IMAGE_ODH_GUARDRAILS_DETECTOR_HUGGINGFACE_RUNTIME_IMAGE
       value: quay.io/opendatahub/guardrails-detector-huggingface-runtime@sha256:f6545954208485ce06c9a17cec13c982ac5c01e065606cd34b2adfb63445703f
       component: odh-guardrails-detector-huggingface-runtime
-      #    - name: RELATED_IMAGE_ODH_OPENVINO_MODEL_SERVER_IMAGE
-      #      value: quay.io/opendatahub/openvino_model_server@sha256:07190f97db631e5f42a6bb6137a91856f5417304ae3fa1a26ccef89941f65cf0
-      #      component: odh-openvino-model-server
+    - name: RELATED_IMAGE_ODH_OPENVINO_MODEL_SERVER_IMAGE
+      value: quay.io/opendatahub/openvino_model_server@sha256:8e9be9503193193ab3e2b4739457dbc0e6f344989705f5a0509d586f1913cf6c
+      component: odh-openvino-model-server
     - name: RELATED_IMAGE_ODH_MODEL_REGISTRY_JOB_ASYNC_UPLOAD_IMAGE
       value: quay.io/opendatahub/model-registry-job-async-upload@sha256:a2aee4fd7dc1bbe57f1b9c67642735cbeaa67c77088c497a5279c4a18d8735c1
       component: odh-model-registry-job-async-upload
