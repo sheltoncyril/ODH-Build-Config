@@ -99,8 +99,8 @@ metadata:
     capabilities: Full Lifecycle
     categories: AI/Machine Learning, Big Data
     certified: "False"
-    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:1a6b776c80d27fb4bd52421c526c12347f2f566347f12d804acb4a3569ad3b72"
-    createdAt: "2026-06-19T14:10:01Z"
+    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:e44d4b2977a2ab4d4820a5eadcfd795c9e9a89923290dd2dfa291818cc52d553"
+    createdAt: "2026-06-19T14:23:02Z"
     description: Operator for deployment and management of Red Hat OpenShift AI
     features.operators.openshift.io/cnf: "false"
     features.operators.openshift.io/cni: "false"
@@ -1882,9 +1882,9 @@ spec:
                 - name: RELATED_IMAGE_ODH_ML_PIPELINES_LAUNCHER_IMAGE
                   value: "quay.io/opendatahub/ds-pipelines-launcher@sha256:977cd8a9a75d43cbbd8abcfe568f4e68071fe95c8f4d6589a35fecd90b7b4702"
                 - name: RELATED_IMAGE_ODH_DATA_SCIENCE_PIPELINES_ARGO_ARGOEXEC_IMAGE
-                  value: "quay.io/opendatahub/ds-pipelines-argo-argoexec@sha256:73fdc4f7f97197987069f9f1613b1f89d540840533aa587de13504068fef0e8b"
+                  value: "quay.io/opendatahub/ds-pipelines-argo-argoexec@sha256:5a7e9beb40fdebd696ad480fc6bf44a6207e0154599d6d258f43b8545658a922"
                 - name: RELATED_IMAGE_ODH_DATA_SCIENCE_PIPELINES_ARGO_WORKFLOWCONTROLLER_IMAGE
-                  value: "quay.io/opendatahub/ds-pipelines-argo-workflowcontroller@sha256:f2207d78e88db8045e9d7fbe87ec710c9447bfb16ae437f5d6fd9a50ed8a0055"
+                  value: "quay.io/opendatahub/ds-pipelines-argo-workflowcontroller@sha256:e1435acb979bee0b127f8bf7b0b22b9308043b56389995524a8ecf60ec9b6be1"
                 - name: RELATED_IMAGE_ODH_MODEL_REGISTRY_IMAGE
                   value: "quay.io/opendatahub/model-registry@sha256:3b9a3abbe7ac2411a1907162230cc8ba3ec196ccf73989230a0b2dbb9c2671f8"
                 - name: RELATED_IMAGE_ODH_MODEL_REGISTRY_OPERATOR_IMAGE
@@ -2113,7 +2113,7 @@ spec:
                   value: registry.redhat.io/openshift4/ose-prom-label-proxy-rhel9@sha256:5522f37104f3fac57567fa2e9ec65601f60b8cea3603b12dcda26db8c481f404
                 - name: RELATED_IMAGE_ODH_PYTHON_312_IMAGE
                   value: registry.redhat.io/ubi9/python-312@sha256:0abad955c2c2e4575dc8987d76b8c49a7dd8e0679063e3118dab03c54528232f
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:1a6b776c80d27fb4bd52421c526c12347f2f566347f12d804acb4a3569ad3b72"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:e44d4b2977a2ab4d4820a5eadcfd795c9e9a89923290dd2dfa291818cc52d553"
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
@@ -2162,7 +2162,7 @@ spec:
                 - -r
                 - /opt/manifests-template/.
                 - /opt/manifests/
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:1a6b776c80d27fb4bd52421c526c12347f2f566347f12d804acb4a3569ad3b72"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:e44d4b2977a2ab4d4820a5eadcfd795c9e9a89923290dd2dfa291818cc52d553"
                 imagePullPolicy: Always
                 name: copy-manifests
                 resources:
@@ -2594,8 +2594,8 @@ spec:
     type: MutatingAdmissionWebhook
     webhookPath: /mutate-prometheus-monitors
   relatedImages:
-  - name: opendatahub-operator-1a6b776c80d27fb4bd52421c526c12347f2f566347f12d804acb4a3569ad3b72-annotation
-    image: "quay.io/opendatahub/opendatahub-operator@sha256:1a6b776c80d27fb4bd52421c526c12347f2f566347f12d804acb4a3569ad3b72"
+  - name: opendatahub-operator-e44d4b2977a2ab4d4820a5eadcfd795c9e9a89923290dd2dfa291818cc52d553-annotation
+    image: "quay.io/opendatahub/opendatahub-operator@sha256:e44d4b2977a2ab4d4820a5eadcfd795c9e9a89923290dd2dfa291818cc52d553"
   - name: odh_kf_notebook_controller_image
     image: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:0602823712b2ee767cc7486071e1b107bca6e3ed2ba018910224803cfaf4d03c"
   - name: odh_dashboard_image
@@ -2625,9 +2625,9 @@ spec:
   - name: odh_ml_pipelines_launcher_image
     image: "quay.io/opendatahub/ds-pipelines-launcher@sha256:977cd8a9a75d43cbbd8abcfe568f4e68071fe95c8f4d6589a35fecd90b7b4702"
   - name: odh_data_science_pipelines_argo_argoexec_image
-    image: "quay.io/opendatahub/ds-pipelines-argo-argoexec@sha256:73fdc4f7f97197987069f9f1613b1f89d540840533aa587de13504068fef0e8b"
+    image: "quay.io/opendatahub/ds-pipelines-argo-argoexec@sha256:5a7e9beb40fdebd696ad480fc6bf44a6207e0154599d6d258f43b8545658a922"
   - name: odh_data_science_pipelines_argo_workflowcontroller_image
-    image: "quay.io/opendatahub/ds-pipelines-argo-workflowcontroller@sha256:f2207d78e88db8045e9d7fbe87ec710c9447bfb16ae437f5d6fd9a50ed8a0055"
+    image: "quay.io/opendatahub/ds-pipelines-argo-workflowcontroller@sha256:e1435acb979bee0b127f8bf7b0b22b9308043b56389995524a8ecf60ec9b6be1"
   - name: odh_model_registry_image
     image: "quay.io/opendatahub/model-registry@sha256:3b9a3abbe7ac2411a1907162230cc8ba3ec196ccf73989230a0b2dbb9c2671f8"
   - name: odh_model_registry_operator_image
