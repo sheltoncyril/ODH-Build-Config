@@ -99,8 +99,8 @@ metadata:
     capabilities: Full Lifecycle
     categories: AI/Machine Learning, Big Data
     certified: "False"
-    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:8a0078d8ab8bca5968f3652b12c5203d88867b509ddfcb0df3f47d14371f38e1"
-    createdAt: "2026-06-19T23:15:45Z"
+    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:80c8df328378781af2b86a5b325c6a8bfacf4280bf577d83a9a751b723909d98"
+    createdAt: "2026-06-19T23:18:33Z"
     description: Operator for deployment and management of Red Hat OpenShift AI
     features.operators.openshift.io/cnf: "false"
     features.operators.openshift.io/cni: "false"
@@ -1872,7 +1872,7 @@ spec:
                 - name: RELATED_IMAGE_ODH_MLMD_GRPC_SERVER_IMAGE
                   value: "quay.io/opendatahub/mlmd-grpc-server@sha256:9aea59acdd7b914b8e8e902f4b388ddf2871b1047e644dbd3c69cb2d4ef8de95"
                 - name: RELATED_IMAGE_ODH_ML_PIPELINES_API_SERVER_V2_IMAGE
-                  value: "quay.io/opendatahub/ds-pipelines-api-server@sha256:686798c3b13672cc25ec69b8036ff8c810df3c4c191448b2c3234e4769184945"
+                  value: "quay.io/opendatahub/ds-pipelines-api-server@sha256:a683b2ff6d1993720ff5174b2368c12054039836b950624b8a9db5211f4f04ba"
                 - name: RELATED_IMAGE_ODH_ML_PIPELINES_PERSISTENCEAGENT_V2_IMAGE
                   value: "quay.io/opendatahub/ds-pipelines-persistenceagent@sha256:3333517331546c2ff8ea9c44c6c6e0da652b74257ede8ea1bb35a5d5446818b6"
                 - name: RELATED_IMAGE_ODH_ML_PIPELINES_SCHEDULEDWORKFLOW_V2_IMAGE
@@ -2113,7 +2113,7 @@ spec:
                   value: registry.redhat.io/openshift4/ose-prom-label-proxy-rhel9@sha256:5522f37104f3fac57567fa2e9ec65601f60b8cea3603b12dcda26db8c481f404
                 - name: RELATED_IMAGE_ODH_PYTHON_312_IMAGE
                   value: registry.redhat.io/ubi9/python-312@sha256:0abad955c2c2e4575dc8987d76b8c49a7dd8e0679063e3118dab03c54528232f
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:8a0078d8ab8bca5968f3652b12c5203d88867b509ddfcb0df3f47d14371f38e1"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:80c8df328378781af2b86a5b325c6a8bfacf4280bf577d83a9a751b723909d98"
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
@@ -2162,7 +2162,7 @@ spec:
                 - -r
                 - /opt/manifests-template/.
                 - /opt/manifests/
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:8a0078d8ab8bca5968f3652b12c5203d88867b509ddfcb0df3f47d14371f38e1"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:80c8df328378781af2b86a5b325c6a8bfacf4280bf577d83a9a751b723909d98"
                 imagePullPolicy: Always
                 name: copy-manifests
                 resources:
@@ -2594,8 +2594,8 @@ spec:
     type: MutatingAdmissionWebhook
     webhookPath: /mutate-prometheus-monitors
   relatedImages:
-  - name: opendatahub-operator-8a0078d8ab8bca5968f3652b12c5203d88867b509ddfcb0df3f47d14371f38e1-annotation
-    image: "quay.io/opendatahub/opendatahub-operator@sha256:8a0078d8ab8bca5968f3652b12c5203d88867b509ddfcb0df3f47d14371f38e1"
+  - name: opendatahub-operator-80c8df328378781af2b86a5b325c6a8bfacf4280bf577d83a9a751b723909d98-annotation
+    image: "quay.io/opendatahub/opendatahub-operator@sha256:80c8df328378781af2b86a5b325c6a8bfacf4280bf577d83a9a751b723909d98"
   - name: odh_kf_notebook_controller_image
     image: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:0602823712b2ee767cc7486071e1b107bca6e3ed2ba018910224803cfaf4d03c"
   - name: odh_dashboard_image
@@ -2615,7 +2615,7 @@ spec:
   - name: odh_mlmd_grpc_server_image
     image: "quay.io/opendatahub/mlmd-grpc-server@sha256:9aea59acdd7b914b8e8e902f4b388ddf2871b1047e644dbd3c69cb2d4ef8de95"
   - name: odh_ml_pipelines_api_server_v2_image
-    image: "quay.io/opendatahub/ds-pipelines-api-server@sha256:686798c3b13672cc25ec69b8036ff8c810df3c4c191448b2c3234e4769184945"
+    image: "quay.io/opendatahub/ds-pipelines-api-server@sha256:a683b2ff6d1993720ff5174b2368c12054039836b950624b8a9db5211f4f04ba"
   - name: odh_ml_pipelines_persistenceagent_v2_image
     image: "quay.io/opendatahub/ds-pipelines-persistenceagent@sha256:3333517331546c2ff8ea9c44c6c6e0da652b74257ede8ea1bb35a5d5446818b6"
   - name: odh_ml_pipelines_scheduledworkflow_v2_image
