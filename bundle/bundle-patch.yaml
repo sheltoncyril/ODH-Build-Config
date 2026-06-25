@@ -1,5 +1,5 @@
 patch:
-  version: 3.5.0-ea.2
+  version: 3.5.0
   relatedImages:
     - name: RELATED_IMAGE_ODH_KF_NOTEBOOK_CONTROLLER_IMAGE
       value: quay.io/opendatahub/kubeflow-notebook-controller@sha256:ac246c26bfc2383a9ae6e09f80a1c6531873390e2215746ea04859f91ff48993
@@ -360,3 +360,7 @@ relatedImages:
     value: quay.io/opendatahub/odh-latency-predictor-test@sha256:427be01a1dd0443c9beb89cf7dc97a97f5a5247332fd5cc57905334499b02353
   - name: RELATED_IMAGE_ODH_DASHBOARD_OPERATOR_IMAGE
     value: quay.io/opendatahub/odh-dashboard-operator@sha256:1d4a22aa41c865d6027a7e9f4a9ef72d9a1e6eb30e8467ca2a7801b7dd8834e9
+  - name: RELATED_IMAGE_ODH_MCP_LIFECYCLE_MODULE_OPERATOR_IMAGE
+    value: quay.io/opendatahub/odh-mcp-lifecycle-module-operator@sha256:38a5bf7ec3969dff7528c5bae97418acc7bfeb4494770109b48f1825051c7d8a
+  - name: RELATED_IMAGE_ODH_MCP_LIFECYCLE_OPERATOR_IMAGE
+    value: quay.io/opendatahub/odh-mcp-lifecycle-operator@sha256:393e8986ed3233bed6fd2fbee23f83d859f314d6064899db916210fc567a75c2

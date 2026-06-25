@@ -358,15 +358,28 @@ spec:
                   kueue:
                     description: Kueue component configuration.
                     properties:
+                      autoCreateQueues:
+                        default: false
+                        description: |-
+                          AutoCreateQueues controls whether the operator automatically creates default
+                          ClusterQueue, LocalQueue and ResourceFlavor resources in managed namespaces.
+                          When false (the default), the operator skips queue creation entirely, allowing
+                          administrators to manage queues via GitOps or other external tooling.
+                          HardwareProfiles of type "Queue" continue to reference externally-managed
+                          LocalQueues without change.
+                          This flag does not affect the Kueue config CR, which is always created.
+                        type: boolean
                       defaultClusterQueueName:
                         default: default
-                        description: Configures the automatically created cluster
-                          queue name.
+                        description: |-
+                          Configures the automatically created cluster queue name.
+                          Only used when autoCreateQueues is true.
                         type: string
                       defaultLocalQueueName:
                         default: default
-                        description: Configures the automatically created, in the
-                          managed namespaces, local queue name.
+                        description: |-
+                          Configures the automatically created, in the managed namespaces, local queue name.
+                          Only used when autoCreateQueues is true.
                         type: string
                       managementState:
                         description: |-
@@ -1207,6 +1220,35 @@ spec:
               components:
                 description: Override and fine tune specific component configurations.
                 properties:
+                  aigateway:
+                    description: AIGateway component configuration.
+                    properties:
+                      batchGateway:
+                        description: BatchGateway controls the batch-gateway operator
+                          sub-component.
+                        properties:
+                          managementState:
+                            enum:
+                            - Managed
+                            - Removed
+                            pattern: ^(Managed|Unmanaged|Force|Removed)$
+                            type: string
+                        type: object
+                      managementState:
+                        description: |-
+                          Set to one of the following values:
+
+                          - "Managed" : the operator is actively managing the component and trying to keep it active.
+                                        It will only upgrade the component if it is safe to do so
+
+                          - "Removed" : the operator is actively managing the component and will not install it,
+                                        or if it is installed, the operator will try to remove it
+                        enum:
+                        - Managed
+                        - Removed
+                        pattern: ^(Managed|Unmanaged|Force|Removed)$
+                        type: string
+                    type: object
                   aipipelines:
                     description: AIPipelines component configuration.
                     properties:
@@ -1480,15 +1522,28 @@ spec:
                   kueue:
                     description: Kueue component configuration.
                     properties:
+                      autoCreateQueues:
+                        default: false
+                        description: |-
+                          AutoCreateQueues controls whether the operator automatically creates default
+                          ClusterQueue, LocalQueue and ResourceFlavor resources in managed namespaces.
+                          When false (the default), the operator skips queue creation entirely, allowing
+                          administrators to manage queues via GitOps or other external tooling.
+                          HardwareProfiles of type "Queue" continue to reference externally-managed
+                          LocalQueues without change.
+                          This flag does not affect the Kueue config CR, which is always created.
+                        type: boolean
                       defaultClusterQueueName:
                         default: default
-                        description: Configures the automatically created cluster
-                          queue name.
+                        description: |-
+                          Configures the automatically created cluster queue name.
+                          Only used when autoCreateQueues is true.
                         type: string
                       defaultLocalQueueName:
                         default: default
-                        description: Configures the automatically created, in the
-                          managed namespaces, local queue name.
+                        description: |-
+                          Configures the automatically created, in the managed namespaces, local queue name.
+                          Only used when autoCreateQueues is true.
                         type: string
                       managementState:
                         description: |-
@@ -1755,6 +1810,24 @@ spec:
               components:
                 description: Expose component's specific status
                 properties:
+                  aigateway:
+                    description: AIGateway component status.
+                    properties:
+                      managementState:
+                        description: |-
+                          Set to one of the following values:
+
+                          - "Managed" : the operator is actively managing the component and trying to keep it active.
+                                        It will only upgrade the component if it is safe to do so
+
+                          - "Removed" : the operator is actively managing the component and will not install it,
+                                        or if it is installed, the operator will try to remove it
+                        enum:
+                        - Managed
+                        - Removed
+                        pattern: ^(Managed|Unmanaged|Force|Removed)$
+                        type: string
+                    type: object
                   aipipelines:
                     description: AIPipelines component status.
                     properties:

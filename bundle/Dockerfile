@@ -12,6 +12,10 @@ ARG ODH_LATENCY_PREDICTOR_TEST_GIT_URL=
 ARG ODH_LATENCY_PREDICTOR_TEST_GIT_COMMIT=
 ARG ODH_DASHBOARD_OPERATOR_GIT_URL=
 ARG ODH_DASHBOARD_OPERATOR_GIT_COMMIT=
+ARG ODH_MCP_LIFECYCLE_MODULE_OPERATOR_GIT_URL=
+ARG ODH_MCP_LIFECYCLE_MODULE_OPERATOR_GIT_COMMIT=
+ARG ODH_MCP_LIFECYCLE_OPERATOR_GIT_URL=
+ARG ODH_MCP_LIFECYCLE_OPERATOR_GIT_COMMIT=
 
 # Core bundle labels.
 LABEL operators.operatorframework.io.bundle.mediatype.v1=registry+v1
@@ -37,6 +41,10 @@ LABEL \
       odh-latency-predictor-test.git.commit="${ODH_LATENCY_PREDICTOR_TEST_GIT_COMMIT}" \
       odh-dashboard-operator.git.url="${ODH_DASHBOARD_OPERATOR_GIT_URL}" \
       odh-dashboard-operator.git.commit="${ODH_DASHBOARD_OPERATOR_GIT_COMMIT}" \
+      odh-mcp-lifecycle-module-operator.git.url="${ODH_MCP_LIFECYCLE_MODULE_OPERATOR_GIT_URL}" \
+      odh-mcp-lifecycle-module-operator.git.commit="${ODH_MCP_LIFECYCLE_MODULE_OPERATOR_GIT_COMMIT}" \
+      odh-mcp-lifecycle-operator.git.url="${ODH_MCP_LIFECYCLE_OPERATOR_GIT_URL}" \
+      odh-mcp-lifecycle-operator.git.commit="${ODH_MCP_LIFECYCLE_OPERATOR_GIT_COMMIT}" \
       opendatahub-operator.image="${OPENDATAHUB_OPERATOR_IMAGE}" \
       build-metadata-url="${BUILD_METADATA_URL}"
 
