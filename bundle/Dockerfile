@@ -36,7 +36,7 @@ LABEL \
       odh-latency-predictor-test.git.url="${ODH_LATENCY_PREDICTOR_TEST_GIT_URL}" \
       odh-latency-predictor-test.git.commit="${ODH_LATENCY_PREDICTOR_TEST_GIT_COMMIT}" \
       odh-dashboard-operator.git.url="${ODH_DASHBOARD_OPERATOR_GIT_URL}" \
-      odh-dashboard-operator.git.commit="${ODH_DASHBOARD_OPERATOR_GIT_COMMIT}"
+      odh-dashboard-operator.git.commit="${ODH_DASHBOARD_OPERATOR_GIT_COMMIT}" \
       opendatahub-operator.image="${OPENDATAHUB_OPERATOR_IMAGE}" \
       build-metadata-url="${BUILD_METADATA_URL}"
 
