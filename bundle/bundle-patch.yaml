@@ -348,16 +348,22 @@ patch:
       component: odh-ai-gateway-operator
     - name: RELATED_IMAGE_ODH_LATENCY_PREDICTOR_TRAINING_IMAGE
       value: quay.io/opendatahub/odh-latency-predictor-training@sha256:2995eaefd22f834aaa4c46f96b8f9ed6f44f2fb1538ad2da8164e50a049bee01
+      component: odh-latency-predictor-training
     - name: RELATED_IMAGE_ODH_LATENCY_PREDICTOR_PREDICTION_IMAGE
       value: quay.io/opendatahub/odh-latency-predictor-prediction@sha256:4c9209c0a20f8584ad04ab99fb247108853f08f39d54101ef4cbdfcbcaccc008
+      component: odh-latency-predictor-prediction
     - name: RELATED_IMAGE_ODH_LATENCY_PREDICTOR_TEST_IMAGE
       value: quay.io/opendatahub/odh-latency-predictor-test@sha256:427be01a1dd0443c9beb89cf7dc97a97f5a5247332fd5cc57905334499b02353
+      component: odh-latency-predictor-test
     - name: RELATED_IMAGE_ODH_DASHBOARD_OPERATOR_IMAGE
       value: quay.io/opendatahub/odh-dashboard-operator@sha256:1d4a22aa41c865d6027a7e9f4a9ef72d9a1e6eb30e8467ca2a7801b7dd8834e9
+      component: odh-dashboard-operator
     - name: RELATED_IMAGE_ODH_MCP_LIFECYCLE_MODULE_OPERATOR_IMAGE
       value: quay.io/opendatahub/odh-mcp-lifecycle-module-operator@sha256:38a5bf7ec3969dff7528c5bae97418acc7bfeb4494770109b48f1825051c7d8a
+      component: odh-mcp-lifecycle-module-operator
     - name: RELATED_IMAGE_ODH_MCP_LIFECYCLE_OPERATOR_IMAGE
       value: quay.io/opendatahub/odh-mcp-lifecycle-operator@sha256:393e8986ed3233bed6fd2fbee23f83d859f314d6064899db916210fc567a75c2
+      component: odh-mcp-lifecycle-operator
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
