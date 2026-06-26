@@ -362,3 +362,4 @@ patch:
     file: additional-images-patch.yaml
   additional-fields:
     file: csv-patch.yaml
+# edit this comment to simulate bundle-patch update.
