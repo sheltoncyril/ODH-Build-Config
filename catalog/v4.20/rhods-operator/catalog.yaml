@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:5fbadc6cd690063645444afe4c2fade37fec7f04541618513d7e462af51b2e72
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:669b456f0320604cca95a51e957973782160a385cba83e0e32f9a3d78f28804a
 name: rhods-operator.3.5.0
 package: rhods-operator
 properties:
@@ -280,8 +280,8 @@ properties:
       capabilities: Full Lifecycle
       categories: AI/Machine Learning, Big Data
       certified: "False"
-      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:4c407d7cd93d471646b0ebd0d98db54e42d9c8470a48bb7efd8119f1f86fb208
-      createdAt: "2026-06-29T08:16:32Z"
+      containerImage: quay.io/opendatahub/opendatahub-operator@sha256:cfcb78c7602c5569881fb9bacdbcc640da75036c85da1f48e321c82d0ee08d1e
+      createdAt: "2026-06-29T09:55:19Z"
       description: Operator for deployment and management of Red Hat OpenShift AI
       feast-cronjob-image: registry.redhat.io/openshift4/ose-cli@sha256:bc35a9fc663baf0d6493cc57e89e77a240a36c43cf38fb78d8e61d3b87cf5cc5
       features.operators.openshift.io/cnf: "false"
@@ -675,9 +675,9 @@ relatedImages:
   name: odh_ai_gateway_payload_processing_image
 - image: quay.io/opendatahub/odh-authbridge-proxy@sha256:2fbb80fc621082ffe3347323aafaffb6517c87c9826db6be79199b10394018fd
   name: odh_authbridge_proxy_image
-- image: quay.io/opendatahub/odh-automl@sha256:c7257f2b356f9f739d6347d642efc0b3ce26c1688efce531bd9c3eb11bc8c422
+- image: quay.io/opendatahub/odh-automl@sha256:c3bbc78ac65caa93979b16cd4593cb5bdbf98dd39bba151a0d4786f87c1a14b3
   name: odh_automl_image
-- image: quay.io/opendatahub/odh-autorag@sha256:8d9040cb7070cc0f6bc195ae33e63918f71539e3960e84d12d8aeedf7d31e5cc
+- image: quay.io/opendatahub/odh-autorag@sha256:bf25ec8954e18a7969e233dd1390ad3dec0d3eef6de9fe488ef53491d01c2296
   name: odh_autorag_image
 - image: quay.io/opendatahub/odh-batch-gateway-operator@sha256:66c68cad1d6fadf33ec0208c5cb61d2b059395b2b39dd63f4be91f7131931ea7
   name: odh_llm_d_batch_gateway_operator_image
@@ -771,7 +771,7 @@ relatedImages:
   name: odh_pipeline_runtime_tensorflow_cuda_py312_image
 - image: quay.io/opendatahub/odh-pipeline-runtime-tensorflow-rocm-py312-ubi9@sha256:12fa6b9210929107c68cc6e950a760cca3bc776f595522e882d1ba86d97d0925
   name: odh_pipeline_runtime_tensorflow_rocm_py312_image
-- image: quay.io/opendatahub/odh-pipelines-components@sha256:db8dd4b85d528cb6b2bebd5f93185e5368c5c0c9e3e8490d37f907e4cc30c166
+- image: quay.io/opendatahub/odh-pipelines-components@sha256:724762d0e3eba3ad1748757ccb7f75d6745d9f9227861bc438f7576ba3e7c37b
   name: odh_pipelines_components_image
 - image: quay.io/opendatahub/odh-rhaii-cluster-validator@sha256:683b44ac6828fc67d86bda17de62cafa557a9bfc96cd0a16d56148451516aba1
   name: odh_rhaii_cluster_validator_image
@@ -821,10 +821,10 @@ relatedImages:
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
 - image: quay.io/opendatahub/odh-workbenches-controller@sha256:a8d8618298043dd988b824710f7bec710bc39beaf1cfe68404146c442f5d1147
   name: odh_workbenches_controller_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:5fbadc6cd690063645444afe4c2fade37fec7f04541618513d7e462af51b2e72
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:669b456f0320604cca95a51e957973782160a385cba83e0e32f9a3d78f28804a
   name: ""
-- image: quay.io/opendatahub/opendatahub-operator@sha256:4c407d7cd93d471646b0ebd0d98db54e42d9c8470a48bb7efd8119f1f86fb208
-  name: opendatahub-operator-4c407d7cd93d471646b0ebd0d98db54e42d9c8470a48bb7efd8119f1f86fb208-annotation
+- image: quay.io/opendatahub/opendatahub-operator@sha256:cfcb78c7602c5569881fb9bacdbcc640da75036c85da1f48e321c82d0ee08d1e
+  name: opendatahub-operator-cfcb78c7602c5569881fb9bacdbcc640da75036c85da1f48e321c82d0ee08d1e-annotation
 - image: quay.io/opendatahub/openvino_model_server@sha256:8e9be9503193193ab3e2b4739457dbc0e6f344989705f5a0509d586f1913cf6c
   name: odh_openvino_model_server_image
 - image: quay.io/opendatahub/spark-operator@sha256:7e86d9e5f7bc19b42bbccbbcfe2e69aaab160bb96dc57a2bdaa95151a2cc8bf9
