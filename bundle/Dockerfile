@@ -48,7 +48,7 @@ LABEL \
       odh-mcp-lifecycle-operator.git.url="${ODH_MCP_LIFECYCLE_OPERATOR_GIT_URL}" \
       odh-mcp-lifecycle-operator.git.commit="${ODH_MCP_LIFECYCLE_OPERATOR_GIT_COMMIT}" \
       odh-trainer-operator.git.url="${ODH_TRAINER_OPERATOR_GIT_URL}" \
-      odh-trainer-operator.git.commit="${ODH_TRAINER_OPERATOR_GIT_COMMIT}"
+      odh-trainer-operator.git.commit="${ODH_TRAINER_OPERATOR_GIT_COMMIT}" \
       opendatahub-operator.image="${OPENDATAHUB_OPERATOR_IMAGE}" \
       build-metadata-url="${BUILD_METADATA_URL}"
 
